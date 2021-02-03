@@ -1,0 +1,26 @@
+---
+title: 獸人酋長的稱霸之路
+header-img: img/home-bg.png
+timezone: Asia/Taipei
+collections:
+  posts:
+    title: Posts
+    output: true
+  steps:
+    title: Steps
+    output: false
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: steps
+  values:
+    title: 
+    date: 2016-09-01 00:00:00 -0700
+markdown: kramdown
+highlighter: rouge
+lsi: false
+description: "超負荷"
+baseurl: ""

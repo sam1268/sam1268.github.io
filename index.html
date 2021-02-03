@@ -1,0 +1,25 @@
+---
+layout: sam1268-home
+---
+
+<div class="container row">
+    <h1 class="cv-title" style="font-style:bold">
+        <span class="black white-text"><b>{{ site.title }}</b></span>
+    </h1>
+    {% assign steps = site.steps | sort: 'date' %} {% for step in steps %}
+    <div class="item">
+        <i class="vertical-line"></i>
+        <h2 class="item-date">{{ step.date | date: '%Y/%m/%d' }}{% if step.enddate %} - {{ step.enddate | date: '%Y/%m/%d' }}{% endif %} {{ step.title }}</h2>
+            {% if step.no-content %}
+            {% else %}
+            <div class="card-panel">
+                <p>{{ step.content }}</p>
+            </div>
+            {% endif %}
+    </div>
+    {% endfor %}
+    <div class="last-item">
+        <i class="vertical-line"></i>
+    </div>
+    <h2 class="item-date">超負荷將與你空幹直到世界盡頭</h2>
+</div>
