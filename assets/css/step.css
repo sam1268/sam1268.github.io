@@ -1,0 +1,7 @@
+.video-container {
+    display: block;
+}
+
+.video-container iframe {
+    border:0px;
+}

@@ -7,10 +7,6 @@ img {
     max-width: 100%
 }
 
-iframe {
-    display:block
-}
-
 h1,
 h2,
 h3,
@@ -21,19 +17,9 @@ h6 {
     text-transform: uppercase
 }
 
-.item {
-    padding-top: 100px;
-    min-height: 150px;
-    position: relative
-}
-
 .item:before,
 .last-item:after {
     background: #fff;
-    border: 8px solid #000;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
     display: inline-block;
     content: "";
     margin-left: 1rem;
@@ -43,7 +29,6 @@ h6 {
 }
 
 .vertical-line {
-    width: 8px;
     background-color: #000;
     position: absolute;
     left: calc(2% - 5px);
@@ -54,11 +39,6 @@ h6 {
 .item .card-panel {
     margin: 0;
     margin: 2rem 0 0 3rem
-}
-
-.item-date {
-    margin-top: -60px;
-    margin-left: 4rem
 }
 
 .cv-title {
@@ -75,4 +55,98 @@ h6 {
     padding-top: 100px;
     height: 150px;
     position: relative
+}
+
+@media (min-width: 300px) {
+    b.top-text {
+        font-size: 0.7em;
+    }
+
+    h2.item-date {
+        font-size: 1.2em;
+        margin-top: -40px;
+        margin-left: 4rem
+    }
+    
+    .item {
+        padding-top: 25px;
+        min-height: 150px;
+        position: relative
+    }
+
+    .vertical-line {
+        width: 4px
+    }
+    
+    .item:before,
+    .last-item:after {
+        border: 4px solid #000;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        left: calc(2% - 28px)
+    }
+
+}
+
+@media (min-width: 768px) {
+    b.top-text {
+        font-size: 1.0em;
+    }
+
+    h2.item-date {
+        font-size: 1.5em;
+        margin-top: -45px;
+        margin-left: 4rem
+    }
+    
+    .item {
+        padding-top: 75px;
+        min-height: 150px;
+        position: relative
+    }
+
+    .vertical-line {
+        width: 6px
+    }
+
+    .item:before,
+    .last-item:after {
+        border: 6px solid #000;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        left: calc(2% - 32px)
+    }
+}
+
+@media (min-width: 1200px) {
+    b.top-text {
+        font-size: 1.2em;
+    }
+
+    h2.item-date {
+        font-size: 2em;
+        margin-top: -50px;
+        margin-left: 4rem
+    }
+
+    .item {
+        padding-top: 100px;
+        min-height: 150px;
+        position: relative
+    }
+
+    .vertical-line {
+        width: 8px
+    }
+
+    .item:before,
+    .last-item:after {
+        border: 8px solid #000;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        left: calc(2% - 36px)
+    }
 }
